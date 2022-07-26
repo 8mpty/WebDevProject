@@ -4,11 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Document Page</title>
-    <script type="text/javascript" src = "js/js.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="css/toolbar.css">
+    <link rel="stylesheet" type="text/css" href="css/HomeCSS/timer.css">
+    <script type="text/javascript" src = "js/HomeJS/timer.js" defer></script>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <h2>This is a text page</h2>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class = "title">TITLE</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="events.html">Events / Schedules</a></li>
+            <li><a href="rules.html">Rules and Regulations</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="register.html">Sign Up</a></li>
+        </ul>
+    </nav>
+    <h1>Days left till event</h1>
+    <div class="days_timer">
+        <div class="days_class">
+            <p class="big-text" id="days">0</p>
+            <span>Days</span>
+        </div>
+    </div>
+    <h2>Be sure to sign up before
+        <h4 id="days_bf"> </h2> 
+        <br>
+    </h2>
+    <hr>
 </body>
 </html>

@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/WebDevProject/images/floorball_1566479336.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: normal;
+    margin-top: 8rem;
+}
+
+h2, #days_bf {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+
+.days_timer, h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-text {
+    font-size: 8rem;
+    color: white;
+    font-weight: bold;
+    margin: 0 2rem;
+}
+
+.days_class {
+    text-align: center;
+}
+.days_class span {
+    color: white;
+}

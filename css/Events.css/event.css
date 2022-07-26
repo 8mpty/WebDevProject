@@ -1,0 +1,50 @@
+h1 {
+    text-align: center;
+}
+
+#tb_days, #tb_dates {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #d1d1d1;
+}
+
+#tb_dates {
+    color: red;
+}
+
+.event_tb_1 {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9rem;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.10);
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+}
+.event_tb_1 thead tr {
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.event_tb_1 tbody tr {
+    border-bottom: 1px solid gray;
+}
+
+.event_tb_1 tbody tr:nth-of-type(even){
+    background-color: #d1d1d1;
+}
+
+.event_tb_1 tbody tr:last-of-type{
+    border-bottom: 1px solid blueviolet;
+}
+.event_tb_1 th, .event_tb_1 td {
+    padding: 12px 15px;
+    border-color: transparent;
+}
+
+.event_tb_1_cls {
+    margin-top: 10rem;
+}
