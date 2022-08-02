@@ -1,0 +1,40 @@
+.history_tab_holder h1{
+    margin-top: 20px;
+    padding-top: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.history_tab_holder p{
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    margin: 20px 50px;
+    line-height: 2rem;
+}
+
+.history_tab_holder{
+    margin: 50px 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.float_img.right {
+    float: right;
+    height: 220px;
+}
+
+.history_tab_holder .float_img.left{
+    float: left;
+    height: 220px;
+}
+
+.history_tab_holder img{
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+}

@@ -90,9 +90,6 @@
 
 
 
-
-
-
     <!-- !ONLY FOOTER STUFF! -->
     <footer>
         <div class="footer_stuff">
@@ -102,7 +99,11 @@
             </ul>
         </div>
         <div class="footer_bottom">
-            <p>copyright &copy; 2022 Empty. designed by <span> Khai </span></p>
+            <p>copyright &copy; 
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>  <!--GET CURRENT YEAR (!WILL UPDATE EACH YEAR!)-->
+                Empty. designed by <span> Khai </span></p>
         </div>
     </footer>
 

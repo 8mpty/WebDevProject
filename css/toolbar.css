@@ -1,6 +1,7 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(20, 20, 40);
+    overflow-y: scroll; overflow-x: hidden;
 }
 
 nav{
@@ -76,7 +77,7 @@ nav a{                      /* Set Content of Toolbar color, size, disable borde
     }
 }
 
-@media (max-width: 1548px){
+@media (max-width: 1550px){
     .checkbtn{
         display: block;
     }
@@ -106,3 +107,9 @@ nav a{                      /* Set Content of Toolbar color, size, disable borde
         left: 0;
     }
 }
+
+body{
+    min-width:1500px;        /* Suppose you want minimum width of 1000px */
+    width: auto !important;  /* Firefox will set width as auto */
+    width:1000px;            /* As IE6 ignores !important it will set width as 1000px; */
+ }
