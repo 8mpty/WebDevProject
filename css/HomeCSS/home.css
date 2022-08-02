@@ -2,8 +2,8 @@
     box-sizing: border-box;
 }
 body {
-    overflow-x: hidden;
     background-color: rgb(20, 20, 40);
+    overflow-y: scroll; overflow-x: hidden;
 }
 
 .days_holder {
