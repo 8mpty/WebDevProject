@@ -1,0 +1,36 @@
+.rules_tab_holder{
+    margin-top: 100px;
+    color: white;
+    margin: 175px 40px;
+}
+
+.rules_tab_holder ul li{
+    list-style-type: square;
+}
+
+.rules_tab_holder h1 , .rules_tab_holder h2{
+    font-size: 40px;
+}
+.g_time{
+    font-size: 20px;
+    margin: 0px 50px;
+}
+
+.g_rule{
+    font-weight: bold;
+    color: blueviolet;
+}
+
+
+.rules_tab_holder li{
+    font-size: 23px;
+    margin: 15px 50px;
+}
+
+.game_time_imp{
+    color: red;
+}
+
+.game_rules{
+    margin: 30px 0px;
+}

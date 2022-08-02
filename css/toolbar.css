@@ -2,6 +2,7 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(20, 20, 40);
     overflow-y: scroll; overflow-x: hidden;
+    margin: 0;
 }
 
 nav{
@@ -20,16 +21,24 @@ label.title{                 /* Title Color */
     line-height: 80px;
 }
 
-nav ul{                     /* Set Content of Toolbar to the Right Side*/
+nav .tl_ul{                     /* Set Content of Toolbar to the Right Side*/
     float: right;
     margin-right: 40px;
 }
 
-nav li{                     /* Set Content of Toolbar side - by - side */
+nav .tl_li{                     /* Set Content of Toolbar side - by - side */
     display: inline-block;
     margin: 0 px;
     line-height: 80px;
 }
+
+nav .tl_ul .tl_li{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
 
 nav a{                      /* Set Content of Toolbar color, size, disable border and decor */
     color: white;
@@ -49,11 +58,11 @@ nav a{                      /* Set Content of Toolbar color, size, disable borde
 }
 
 * {
-    padding: 0;
+    /* padding: 0; */
     margin: 0;
-    list-style: none;
     text-decoration: none;
-}
+} 
+
 
 .checkbtn {
     color: white;
@@ -72,7 +81,7 @@ nav a{                      /* Set Content of Toolbar color, size, disable borde
         font-size: 30px;
         padding-left: 60px;
     }
-    nav ul li a{
+    nav .tl_ul .tl_li a{
         margin-right: 20px;
         font-size: 18px;
         text-align: center;
@@ -83,7 +92,7 @@ nav a{                      /* Set Content of Toolbar color, size, disable borde
     .checkbtn{
         display: block;
     }
-    ul {
+    .tl_ul {
         position: fixed;
         width: 100%;
         height: 100%;
@@ -93,19 +102,19 @@ nav a{                      /* Set Content of Toolbar color, size, disable borde
         text-align: center;
         transition: all .5s;             /* animation timing */
     }
-    nav li ul{
+    nav .tl_li .tl_ul{
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    nav a ul li{
+    nav a .tl_ul .tl_li{
         font-size: 25px;
     }
     a.active, a:hover{
         background: none;
         color: white;
     }
-    #check:checked ~ ul{
+    #check:checked ~ .tl_ul{
         left: 0;
     }
 }
