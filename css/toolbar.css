@@ -1,8 +1,6 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-html { 
-    overflow-y: hidden; 
+    background-color: rgb(20, 20, 40);
 }
 
 nav{
@@ -13,7 +11,7 @@ nav{
     background: darkslateblue;
 }
 
-label.title{
+label.title{                 /* Title Color */
     font-size: 35px;
     font-weight: bold;
     color: white;
@@ -21,18 +19,18 @@ label.title{
     line-height: 80px;
 }
 
-nav ul{
+nav ul{                     /* Set Content of Toolbar to the Right Side*/
     float: right;
     margin-right: 40px;
 }
 
-nav li{
+nav li{                     /* Set Content of Toolbar side - by - side */
     display: inline-block;
     margin: 0 px;
     line-height: 80px;
 }
 
-nav a{
+nav a{                      /* Set Content of Toolbar color, size, disable border and decor */
     color: white;
     font-size: 15px;
     text-transform: uppercase;
@@ -42,7 +40,7 @@ nav a{
     text-decoration: none;
 }
 
-a.active, a:hover{
+.tl a:hover{          /* Have White Border around Toolbar text when user Hover's over and animation */
     border: 1px solid white;
     transition: .5s;
 }
@@ -66,7 +64,7 @@ a.active, a:hover{
     display: none;
 }
 
-@media (max-width: 1048px){
+@media (max-width: 1200px){
     label.title{
         font-size: 30px;
         padding-left: 60px;
@@ -78,7 +76,7 @@ a.active, a:hover{
     }
 }
 
-@media (max-width: 909px){
+@media (max-width: 1548px){
     .checkbtn{
         display: block;
     }
@@ -86,11 +84,11 @@ a.active, a:hover{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: rgb(84, 0, 153);
+        background: rgb(84, 0, 153);    /* Background Color of Collapsing Toolbar */
         top: 80px;
-        left: -100%;
+        left: 100%;                     /* Goes from right to left */
         text-align: center;
-        transition: all .5s;
+        transition: all .5s;             /* animation timing */
     }
     nav li ul{
         display: block;

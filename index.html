@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Home Page</title>
     <link rel="stylesheet" type="text/css" href="css/toolbar.css">
-    <link rel="stylesheet" type="text/css" href="css/HomeCSS/timer.css">
+    <link rel="stylesheet" type="text/css" href="css/HomeCSS/home.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <script type="text/javascript" src = "js/HomeJS/timer.js" defer></script>
 </head>
 <body>
     <nav>
-        <input type="checkbox" id="check">
+        <div class="tl">
+            <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <label class = "title">TITLE</label>
+        <label class = "title">Floorball Bonding Event</label>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="history.html">History</a></li>
@@ -26,18 +29,82 @@
             <li><a href="videos.html">Videos</a></li>
             <li><a href="register.html">Sign Up</a></li>
         </ul>
-    </nav>
-    <h1>Days left till event</h1>
-    <div class="days_timer">
-        <div class="days_class">
-            <p class="big-text" id="days">0</p>
-            <span>Days</span>
         </div>
+    </nav>
+
+    
+
+    <div class="days_holder">
+        <h1>Days left till event</h1>
+        <div class="days_timer">
+            <div class="days_class">
+                <p class="big-text" id="days">0</p>
+                <span>Days</span>
+            </div>
+        </div>
+        <h2 class="sign_b4">Be sure to sign up before
+            <h4 id="days_bf"> </h2> 
+            <br>
+        </h2>
     </div>
-    <h2>Be sure to sign up before
-        <h4 id="days_bf"> </h2> 
-        <br>
-    </h2>
+    <br>
+    <br>
     <hr>
+
+
+
+
+
+    <!-- !ONLY PAGE DESCRIPTION STUFF + IMAGES! -->
+    <div class="paras_full_container">
+        <div class="desc_holder">
+            <div class="img_holder">
+                <img src="https://thumbs.dreamstime.com/b/bonding-family-four-running-grassy-field-playing-playing-touch-run-game-laughing-cheerful-bonding-family-four-running-125324466.jpg" alt="" class="float_right right">
+            </div>
+            
+            <h1>*What is this event?</h1>
+
+            <p>This event is meant to teach people about the sport "floorball". Teach everyone and anyone who joins how to play this sport. We will provide foods and eqipment for you so don't worry about that. EVERYONE is welcome to join us.Be sure to sign up before the deadline as all registrations will be closed by then. </p>
+            <br>
+            <h2>Have Fun and Good Luck!</h2>
+        </div>    
+    </div>
+    <hr>
+
+    <div class="paras_full_container">
+        <div class="desc_holder2">
+            <div class="img_holder2">
+                <img src="https://dltaw1vhj9zy5.cloudfront.net/2021/06/ukraine_June2021-1024x683.jpg" alt="" class="float_left left">
+            </div>
+            
+            <h1>*What is the main point of this event?</h1>
+
+            <p>It is meant for families and friends to bond more with each other as we did not get to set each other much during lockdown. Since the safe distancing as been lifted, we can now have some fun altogether. Catchup with each other and most definitely..</p>
+            <br>
+            <h2>Have Fun!</h2>
+        </div>    
+    </div>
+    <hr>
+
+
+
+
+
+
+
+
+    <!-- !ONLY FOOTER STUFF! -->
+    <footer>
+        <div class="footer_stuff">
+            <h3>Made by. Khai</h3>
+            <ul class="other_links">
+                <li><a href="https://github.com/8mpty"> <i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer_bottom">
+            <p>copyright &copy; 2022 Empty. designed by <span> Khai </span></p>
+        </div>
+    </footer>
+
 </body>
 </html>

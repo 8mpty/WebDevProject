@@ -1,5 +1,7 @@
 h1 {
     text-align: center;
+    color:white;
+    margin-top: 200px;
 }
 
 #tb_days, #tb_dates {
@@ -45,6 +47,10 @@ h1 {
     border-color: transparent;
 }
 
-.event_tb_1_cls {
-    margin-top: 10rem;
+.event_tb_cls {
+    margin-top: 80px;
+}
+
+.sup_white{
+    color:white;
 }

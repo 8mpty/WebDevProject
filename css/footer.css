@@ -1,0 +1,39 @@
+/* Footer Stuff */
+
+.footer_stuff{
+    background: darkslateblue;
+    height: auto;
+}
+
+.footer_stuff h3{
+    color: white;
+    margin: 5px 0px;
+}
+
+.footer_stuff {
+    display: flex;
+    align-items: center;
+    justify-self: content;
+    text-align: center;
+    flex-direction: column;
+}
+
+.other_links a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_stuff a i{
+    margin: 10px 0px;
+    font-size: 2rem;
+}
+
+.other_links a:hover i{
+    color: rgb(2, 1, 7);
+}
+
+.footer_bottom{
+    background: rgb(53, 45, 102);
+    text-align: center;
+    padding: 20px 0;
+}

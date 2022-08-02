@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    background-color: rgb(20, 20, 40);
+}
+
+.days_holder {
+    /* background-image: url("/WebDevProject/images/floorballstick.png"); */
+    background-image: url("https://static.vecteezy.com/system/resources/previews/000/118/794/original/vector-colorful-floorball-balls-set.jpg");
+    background-size: cover;
+}
+
+p, h2 {
+    color: white;
+}
+
+.days_holder h1{
+    font-size: rem;
+    color: white;
+    font-weight: normal;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sign_b4, #days_bf {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.big-text {
+    font-size: 8rem;
+    color: white;
+    font-weight: bold;
+    margin: 0 2rem;
+}
+
+.days_class {
+    text-align: center;
+}
+.days_class span {
+    color: white;
+}
+
+
+
+/* --!DESCRIPTION CSS CODE ONLY!-- */
+.paras_full_container h1{
+    color:white;
+}
+.paras_full_container {
+    margin: 50px 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.paras_full_container p {
+    margin: 15px 0px;
+}
+
+.float_right.right {
+    float: right;
+    height: 250px;
+    margin: auto 50px;
+}
+
+.float_left.left {
+    float: left;
+    height: 250px;
+    margin: auto 50px;
+}
