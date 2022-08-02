@@ -1,0 +1,9 @@
+.video_tab_holder{
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+.yt_video_holder iframe{
+    margin: 25px;
+}
