@@ -11,6 +11,9 @@
     <link rel="stylesheet" type="text/css" href="css/toolbar.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/RegisterCSS/register.css">
+    <script type="text/javascript" src = "RegisterJS/register.js" defer></script>
+
+    
 
 </head>
 <body>
@@ -35,7 +38,7 @@
     
     
     <div class="reg_form">
-        <form action="">
+        <form name="reg_form" method="post" onsubmit="return subClick();">
             <fieldset id="Registration Form">
                 <legend class="form_title">Registration Form</legend>
                 <br>
@@ -54,18 +57,7 @@
                     <label for="female"> <div class="gender"> Female </div><input type="radio" id="female" name="gender" value="female" required></label>
                 </div>
                 <br>
-        
-                <!-- <label for="diploma">Diploma in:</label>
-                <input name="diplome" id="diploma" list="courselist" required/>
-                <datalist id="courselist">
-                    <option value="IT"></option>
-                    <option value="IT2"></option>
-                    <option value="IT3"></option>
-                    <option value="IT4"></option>
-                    <option value="IT5"></option>
-                </datalist> -->
-        
-        
+
                 <label for="email">
                     <p>Email Address:</p>
                     <input type="email" name="email" id="email" required/>
@@ -85,32 +77,8 @@
                 <label for="">
                     <p>How many people are you bringing?: </p>
                     <input type="number" name="amt_per" value="0" min="0" max="10">
-                    <!-- <output id="wValue">2</output> persons -->
                 </label>
                 <br><br>
-    
-                <!-- <label for="">
-                    Fav Color: <input type="color" name="color" required/>
-                </label>
-                <br> -->
-
-
-                <!-- <label for="">
-                    Prefered Activity: 
-                    <select name="activity" id="">
-                        <option value="swim" selected>Swimming</option>
-                        <option value="eat" selected>Eat</option>
-                        <option value="sing" selected>Sing</option>
-                        <option value="dance" selected>Dance</option>
-                        <option value="read" selected>Read</option>
-                    </select>
-                </label>
-                <br><br> -->
-    
-                <!-- <label for="">
-                    Favourite Website: <input type="url" name="website" placeholder="http://www.website.com" id=""/>
-                </label>
-                <br> -->
     
                 <label for="">
                     Input Remarks Here (if any): 
@@ -119,12 +87,17 @@
                 <textarea name="remarks" id="remakrs" cols="30" rows="10" placeholder="Input Any Remarks Here"></textarea>
                 
                 <br>
-                <button type="submit" name="" id="" value="Submit">Submit</button>
+                <button type="submit" name="" id="submit" value="Submit">Submit</button>
             </fieldset>
-    
-            
         </form>
+        <!-- <script>
+            var pressedButton = document.getElementsByTagName("button")[0];
+            pressedButton.addEventListener("click", function (event) {
+            alert("Info Retrieved")
+            })
+        </script> -->
     </div>
+    
 
     
 
