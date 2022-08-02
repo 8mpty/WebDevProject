@@ -1,0 +1,77 @@
+
+.reg_form {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    left: 50%;
+    margin-bottom: 50px;
+    margin-top: 150px;
+}
+
+.reg_form label, legend{
+    font-size: 20px;
+    color: white;
+}
+
+.form_title{
+    font-size: 50px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 0;
+}
+
+.reg_form span{
+    color:rgb(255, 255, 0);
+}
+.reg_form p{
+    margin: 10px 0px;
+}
+
+.reg_form input{
+    font-size: 16px;
+    padding: 15px 10px;
+    width: 50%;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+}
+
+.reg_form button{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0px;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.reg_form button:hover{
+    color: white;
+    background-color:rgb(84, 0, 153); 
+}
+
+.radio_stuff label{
+    text-align: center;
+    align-items: center;
+    top: 0;
+}
+
+/* .radio_stuff{
+    align-items: center;
+    margin: 10px;
+}
+.gender{
+    align-items: center;
+    margin: 10px;
+    font-weight: bold;
+} */
+
+textarea{
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+fieldset{
+    border-radius: 50px;
+    background-color: rgb(38, 14, 61);
+}
