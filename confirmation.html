@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/toolbar.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/ConfirmationCSS/confirmation.css">
+    <title>Confirmation Page</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="tl">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="title">HOME</label>
+            <ul class="tl_ul">
+                <li class="tl_li"><a href="index.html">Home</a></li>
+                <li class="tl_li"><a href="history.html">History</a></li>
+                <li class="tl_li"><a href="rules.html">Rules and Regulations</a></li>
+                <li class="tl_li"><a href="events.html">Events / Schedules</a></li>
+                <li class="tl_li"><a href="videos.html">Videos</a></li>
+                <li class="tl_li"><a href="register.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="confirmation_tab_holder">
+        <hr>
+        <h1> |Please ScreenShot This Page For Proof Of Sign Up| </h1>
+        <hr>
+    </div>
+
+    <div class="get_data_script">
+        <script type="text/javascript">
+            document.write("<h1>CONFIRMED!</h1><h2>You entered the following data:</h2>");
+            var formData = location.search;
+    
+            formData = formData.substring(1, formData.length);
+            while (formData.indexOf("+") != -1) {
+                formData = formData.replace("+", " ");
+            }
+            formData = unescape(formData);
+            var formArray = formData.split("&");
+            document.writeln("<div " + "class = form_Data" + "> ");
+    
+            for (var i = 0; i < formArray.length; ++i) {
+    
+                document.writeln("<p>"+ formArray[i] + "</p>");
+            }
+            document.writeln(" </div>");
+    
+        </script>
+    </div>
+    
+
+    
+
+
+    <!-- !ONLY FOOTER STUFF! -->
+    <footer>
+        <div class="footer_stuff">
+            <h3>Made by. Khai</h3>
+            <ul class="other_links">
+                <li class="footer_li"><a href="https://github.com/8mpty" target="_blank"> <i
+                            class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer_bottom">
+            <p>copyright &copy;
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                <!--GET CURRENT YEAR (!WILL UPDATE EACH YEAR FOR COPYRIGHT!)-->
+                Empty. designed by <span> Khai </span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

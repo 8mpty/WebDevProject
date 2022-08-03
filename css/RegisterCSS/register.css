@@ -17,6 +17,8 @@
     font-size: 50px;
     text-transform: uppercase;
     border-radius: 10px;
+    background-color: darkslateblue;
+    padding: 0px 15px;
     border: 0;
 }
 
@@ -55,16 +57,6 @@
     align-items: center;
     top: 0;
 }
-
-/* .radio_stuff{
-    align-items: center;
-    margin: 10px;
-}
-.gender{
-    align-items: center;
-    margin: 10px;
-    font-weight: bold;
-} */
 
 textarea{
     font-size: 20px;

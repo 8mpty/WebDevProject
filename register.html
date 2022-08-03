@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/toolbar.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/RegisterCSS/register.css">
-    <script type="text/javascript" src = "RegisterJS/register.js" defer></script>
+    <script type="text/javascript" src = "js/RegisterJS/register.js" defer></script>
 
     
 
@@ -38,35 +38,35 @@
     
     
     <div class="reg_form">
-        <form name="reg_form" method="post" onsubmit="return subClick();">
+        <form action="confirmation.html" name="reg_form" method="get" >
             <fieldset id="Registration Form">
                 <legend class="form_title">Registration Form</legend>
                 <br>
                 <label for="Name">
-                    Name: <input type="text" name="name" id="name" required>
+                    Name: <input type="text" name="Name" id="name" required>
                 </label>
                 <br><br><br>
                 <label for="">
-                    Date Participating: <input type="date" id="sign_date" name="sign_date" min="2022-08-26" max="2022-08-28" required />
+                    Date Participating: <input type="date" id="ign_date" name="Date Attending" min="2022-08-26" max="2022-08-28" required />
                 </label>
                 <br><br>
         
                 <div class="radio_stuff">
-                    <label for="male"> <div class="gender"> Male </div><input type="radio" id="male" name="gender" value="male" required></label>
+                    <label for="male"> <div class="gender"> Male </div><input type="radio" id="male" name="Gender" value="male" required></label>
                     <br>
-                    <label for="female"> <div class="gender"> Female </div><input type="radio" id="female" name="gender" value="female" required></label>
+                    <label for="female"> <div class="gender"> Female </div><input type="radio" id="female" name="Gender" value="female" required></label>
                 </div>
                 <br>
 
                 <label for="email">
                     <p>Email Address:</p>
-                    <input type="email" name="email" id="email" required/>
+                    <input type="email" name="Email" id="email" required/>
                 </label>
                 <br>
     
                 <label for="contact">
                     <p>Contact Number:</p>
-                    <input type="tel" name="contact" id="contact" title="8 Digits Required" pattern="[0-9]{8}" placeholder="xxxxxxxx" required/>
+                    <input type="tel" name="Contact" id="contact" title="8 Digits Required" pattern="[0-9]{8}" placeholder="xxxxxxxx = 8 Digits Only" required/>
                 </label>
                 <br><br>
                 <br>
@@ -75,8 +75,8 @@
                     <span>(not required if going alone)</span>:
                 </legend>
                 <label for="">
-                    <p>How many people are you bringing?: </p>
-                    <input type="number" name="amt_per" value="0" min="0" max="10">
+                    <p>How many people are you bringing? (Max 10): </p>
+                    <input type="number" name="Extra Persons" value="0" min="0" max="10">
                 </label>
                 <br><br>
     
@@ -84,18 +84,12 @@
                     Input Remarks Here (if any): 
                 </label>
                 <br><br>
-                <textarea name="remarks" id="remakrs" cols="30" rows="10" placeholder="Input Any Remarks Here"></textarea>
+                <textarea name="Remarks" id="remakrs" cols="35" rows="5" placeholder="Input Any Remarks Here"></textarea>
                 
                 <br>
                 <button type="submit" name="" id="submit" value="Submit">Submit</button>
             </fieldset>
         </form>
-        <!-- <script>
-            var pressedButton = document.getElementsByTagName("button")[0];
-            pressedButton.addEventListener("click", function (event) {
-            alert("Info Retrieved")
-            })
-        </script> -->
     </div>
     
 
