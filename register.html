@@ -43,11 +43,11 @@
                 <legend class="form_title">Registration Form</legend>
                 <br>
                 <label for="Name">
-                    Name: <input type="text" name="Name" id="name" required>
+                    Name: <input class="input_fields" type="text" name="Name" id="name" required>
                 </label>
                 <br><br><br>
                 <label for="">
-                    Date Participating: <input type="date" id="ign_date" name="Date Attending" min="2022-08-26" max="2022-08-28" required />
+                    Date Participating: <input class="input_fields" type="date" id="ign_date" name="Date Attending" min="2022-08-26" max="2022-08-28" required />
                 </label>
                 <br><br>
         
@@ -60,13 +60,13 @@
 
                 <label for="email">
                     <p>Email Address:</p>
-                    <input type="email" name="Email" id="email" required/>
+                    <input class="input_fields" type="email" name="Email" id="email" required/>
                 </label>
                 <br>
     
                 <label for="contact">
                     <p>Contact Number:</p>
-                    <input type="tel" name="Contact" id="contact" title="8 Digits Required" pattern="[0-9]{8}" placeholder="xxxxxxxx = 8 Digits Only" required/>
+                    <input class="input_fields" type="tel" name="Contact" id="contact" title="8 Digits Required" pattern="[0-9]{8}" placeholder="xxxxxxxx = 8 Digits Only" required/>
                 </label>
                 <br><br>
                 <br>
@@ -76,7 +76,7 @@
                 </legend>
                 <label for="">
                     <p>How many people are you bringing? (Max 10): </p>
-                    <input type="number" name="Extra Persons" value="0" min="0" max="10">
+                    <input class="input_fields" type="number" name="Extra Persons" value="0" min="0" max="10">
                 </label>
                 <br><br>
     
@@ -84,7 +84,7 @@
                     Input Remarks Here (if any): 
                 </label>
                 <br><br>
-                <textarea name="Remarks" id="remakrs" cols="35" rows="5" placeholder="Input Any Remarks Here"></textarea>
+                <textarea class="input_fields" name="Remarks" id="remakrs" cols="35" rows="5" placeholder="Input Any Remarks Here"></textarea>
                 
                 <br>
                 <button type="submit" name="" id="submit" value="Submit">Submit</button>

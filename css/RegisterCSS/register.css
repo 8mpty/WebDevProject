@@ -67,3 +67,12 @@ fieldset{
     border-radius: 50px;
     background-color: rgb(38, 14, 61);
 }
+
+.input_fields:hover{
+    background-color:rgb(107, 0, 194); 
+    color: white;
+}
+
+::placeholder{
+    color: black;
+}
